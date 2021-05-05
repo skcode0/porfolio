@@ -28,7 +28,7 @@ function Intro() {
                     />
                 </div>
 
-                <button className="about-me-btn"><a href="#about">About Me</a></button>
+                <a href="#about"><button className="about-me-btn">About Me</button></a>
                 <button className="resume-btn">Resume</button>
 
             </p>

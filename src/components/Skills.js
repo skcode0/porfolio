@@ -11,6 +11,7 @@ import ReduxIcon from '../img/redux.svg';
 import JestIcon from '../img/jest.svg';
 import JasmineIcon from '../img/jasmine.svg';
 import styledCompIcon from '../img/styled-components.svg';
+import framerIcon from '../img/framer.svg';
 
 import gitIcon from '../img/git.svg';
 import githubIcon from '../img/github.svg';
@@ -50,6 +51,7 @@ function Skills() {
                     <Skill src={JestIcon} alt="Jest icon" text="Jest"/>
                     <Skill src={JasmineIcon} alt="Jasmine icon" text="Jasmine"/>
                     <Skill src={styledCompIcon} alt="Styled Components icon" text="Styled Component"/>
+                    <Skill src={framerIcon} alt="Framer Motion icon" text="Framer Motion"/>
                 </SkillBox>
             </SkillDiv>
 

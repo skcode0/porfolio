@@ -6,6 +6,10 @@ export const StyledSkill = styled.div`
     border-radius: 20px;
     margin: 0 10px;
 
+    .js-tilt-glare{
+        border-radius: inherit;
+    }
+
     :hover{
         box-shadow: 3px 3px 3px 3px black;
         transform: scale(1.1);

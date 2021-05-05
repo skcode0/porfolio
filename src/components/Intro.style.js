@@ -31,17 +31,7 @@ export const StyledIntro = styled.div`
 
     .about-me-btn:hover{
         background-color: white;
-
-        a{
-            color: var(--secondary);
-        }
-    }
-
-    @keyframes flip-colors{
-        0%{
-            color: var(--secondary);
-            background-color: white;
-        }
+        color: var(--secondary);
     }
 
     .resume-btn{
