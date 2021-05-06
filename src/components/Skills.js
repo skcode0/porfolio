@@ -33,12 +33,12 @@ import Skill from './Skill';
 function Skills() {
     return (
         <div className="div-width" id="skills">
-            <StyledTitle>
+            <StyledTitle data-aos="fade-up">
                 <h1>Skills</h1>
                 <div className="hr-line"></div>
             </StyledTitle>
 
-            <SkillDiv>
+            <SkillDiv data-aos="fade-up">
                 <h2>Languages/Frameworks/Libraries</h2>
                 <SkillBox>
                     <Skill src={htmlIcon} alt="html5 icon" text="HTML"/>
@@ -55,7 +55,7 @@ function Skills() {
                 </SkillBox>
             </SkillDiv>
 
-            <SkillDiv>
+            <SkillDiv data-aos="fade-up">
                 <h2>Technologies</h2>
                 <SkillBox>
                     <Skill src={gitIcon} alt="git icon" text="Git"/>
@@ -67,7 +67,7 @@ function Skills() {
                 </SkillBox>
             </SkillDiv>
 
-            <SkillDiv>
+            <SkillDiv data-aos="fade-up">
                 <h2>Miscellaneous/Soft Skills</h2>
                 <SkillBox>
                     <Skill src={korean} alt="Korean icon" text="Korean"/>

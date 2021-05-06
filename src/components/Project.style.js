@@ -37,8 +37,8 @@ export const StyledProject = styled.div`
 
         button{
             background-color: var(--secondary);
-            padding: 15px 20px;
             color: white;
+            font-size: 1rem;
         }
     }
 

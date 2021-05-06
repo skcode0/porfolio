@@ -9,12 +9,12 @@ import Project from './Project';
 function Projects() {
     return (
         <StyledProjectWrapper className="div-width" id="projects">
-            <StyledTitle>
+            <StyledTitle data-aos="fade-up">
                 <h1>Featured Projects</h1>
                 <div className="hr-line"></div>
             </StyledTitle>
             
-            <Project 
+            <Project
                 title = "Pinterest Clone"
                 description = "Creating a clone of a popular image-sharing website, Pinterest."
                 builtWith = {["React", "Styled Components", "UnSplash API"]}

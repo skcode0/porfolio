@@ -8,12 +8,12 @@ import { StyledTitle } from './Skills.style';
 function Contacts() {
     return (
         <StyledContact className="div-width" id="contacts">
-            <StyledTitle>
+            <StyledTitle data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
                 <h1>Contacts</h1>
                 <div className="hr-line"></div>
             </StyledTitle>
 
-            <div className="contact-icons">
+            <div className="contact-icons" data-aos="fade-up" data-aos-anchor-placement="top-bottom" >
                 <a href="https://github.com/skcode0" target="_blank" rel="noreferrer">
                     <img src={githubIcon} alt="Github icon"/>
                     <p>Github</p>

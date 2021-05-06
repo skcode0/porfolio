@@ -67,6 +67,5 @@ export const GlobalStyle = createGlobalStyle`
         margin: 20px auto;
         padding-top: 5rem;
     }
-
 `
 

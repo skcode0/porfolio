@@ -23,7 +23,7 @@ function Project(props) {
 
     return (
         <StyledProject reverse={reverse}>
-            <div className="project-description">
+            <div className="project-description" data-aos={reverse ? "fade-left" : "fade-right"} data-aos-delay="300">
                 <h2>{title}</h2>
                 <p>{description}</p>
                 <div className="tags">
@@ -37,7 +37,7 @@ function Project(props) {
                 </div>
             </div>
             
-            <img ref={projectRef} src={img} alt={title} />
+            <img ref={projectRef} src={img} alt={title} data-aos={reverse ? "fade-right" : "fade-left"} data-aos-delay="300"/>
         </StyledProject>
 )
 }
