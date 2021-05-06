@@ -4,8 +4,6 @@ import VanillaTilt from 'vanilla-tilt';
 
 function Project(props) {
     const { title, description, builtWith, code, demo, img, reverse } = props;
-
-    console.log(props)
     const projectRef = useRef(null);
 
     // options for vanilla tilt
@@ -28,7 +26,7 @@ function Project(props) {
                 <p>{description}</p>
                 <div className="tags">
                     {
-                        builtWith.map(tag => <p className="tag">{tag}</p>)
+                        builtWith.map(tag => <p className="tag" key={tag}>{tag}</p>)
                     }
                 </div>
                 <div className="btn-container">

@@ -6,7 +6,7 @@ import { StyledIntro } from './Intro.style';
 function Intro() {
     return (
         <StyledIntro id="home">
-            <p className="intro">
+            <div className="intro">
                 {`Hello, World! I am a `}	
                 <div className="type-writer">
                     <Typewriter
@@ -30,8 +30,7 @@ function Intro() {
 
                 <a href="#about"><button className="about-me-btn">About Me</button></a>
                 <button className="resume-btn">Resume</button>
-
-            </p>
+            </div>
         </StyledIntro>
     )
 }

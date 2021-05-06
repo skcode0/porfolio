@@ -11,4 +11,4 @@
 
 [Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/)
 
-
+[React Spinners (preloader)](https://www.npmjs.com/package/react-spinners)
