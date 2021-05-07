@@ -13,6 +13,10 @@ function App() {
   //!
   // TODOs: custom mouse, mobile responsive, button animation, nav animation, about section animation, contact animation, link resume
 
+  useEffect(() =>{
+    AOS.init({duration: 700});
+  }, [])
+
   return (
       <div className="App">
         <GlobalStyle />
