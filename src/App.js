@@ -31,7 +31,7 @@ const override = css`
 
 function App() {
   //!
-  // TODOs: loading screen, mobile responsive, nav animation, about section, custom mouse, contact animation, link resume
+  // TODOs: custom mouse, mobile responsive, button animation, nav animation, about section animation, contact animation, link resume
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() =>{

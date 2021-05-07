@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { StyledAbout, StyledAboutTitle } from './About.style';
+import circularText from '../img/circularText.svg';
+import VanillaTilt from 'vanilla-tilt';
 
 function About() {
+    const pRef = useRef(null);
+
+    // options for vanilla tilt
+    const options = {
+        reverse: true,
+        "full-page-listening": true,
+        max: 30
+    }
+
+    useEffect(() =>{
+        VanillaTilt.init(pRef.current, options);
+    }, []);
+
     return (
         <StyledAbout className="div-width" id="about">
             <div className="about-me">
@@ -9,12 +24,13 @@ function About() {
                     <h1>About Me</h1>
                     <div className="hr-line"></div>
                 </StyledAboutTitle>
-                {/* //! finish about section */}
                 <p data-aos="fade-up">I am a highly motivated web developer who is always willing to learn. I started learning about web developement out of curiosity, but now, I found my love for coding and web designing. My goal is to give web users the best experience they can get on a website! </p>
             </div>
 
-            {/* //! add something */}
-
+            <div className="circular-text" data-aos="fade-up">
+                <img src={circularText} alt="Circular Text"/>
+                <p ref={pRef}>SK</p>
+            </div>
         </StyledAbout>
     )
 }
