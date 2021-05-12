@@ -21,4 +21,6 @@ For using ref in conditional rendering
 - "inView" returns true if DOM node in view; false if it's not.
 - "entry" give access to DOM node properties.
 
+[gh-pages](https://blog.usejournal.com/how-to-deploy-your-react-app-into-github-pages-b2c96292b18e)
+
 
