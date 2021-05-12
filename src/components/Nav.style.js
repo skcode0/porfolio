@@ -8,17 +8,15 @@ export const StyledNav = styled.nav`
     z-index: 100;
     display: flex;
     justify-content: space-between;
+    margin-left: 4rem;
     align-items: center;
 
-/* //! make animation */
     .logo a{
         background-image: -webkit-linear-gradient(-45deg, var(--secondary) 55%, var(--complementary) 45%);
         color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-            font-size: 1.7rem;
-        border: 1px red solid;
-        margin-left: 6rem;
+        font-size: 1.7rem;
         font-weight: bold;
         text-align: center;
     }
@@ -27,19 +25,16 @@ export const StyledNav = styled.nav`
         background-image: -webkit-linear-gradient(45deg, var(--complementary) 55%, var(--secondary) 45%);
     }
 
-    ul{
+    .destop-ul{
         width: 50%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        border: 1px red solid;
     }
 
     li{
         position: relative;
     }
-
-/* //! make animation */
 
     li a::after{
         content: "";
@@ -48,11 +43,44 @@ export const StyledNav = styled.nav`
         left: 0;
         width: 100%;
         height: 3px;
-        background-color: red;
-        /* display: none; */
+        background-image: -webkit-linear-gradient(45deg, var(--complementary) 50%, var(--secondary) 50%);
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
     }
 
     li a:hover::after{
-        background-color: blue;
+        transform: scaleX(1);
+    }
+
+    @media screen and (max-width: 1024px) {
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .logo a{
+            margin-left: 0;
+        }
+        
+        .destop-ul{
+            display: none;
+        }
+    }
+`
+
+export const StyledMobileNav = styled.div`
+    display: none;
+
+    img{
+        width: 40px;
+
+        :hover{
+            transform: scale(1.1);
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        display: block;
     }
 `

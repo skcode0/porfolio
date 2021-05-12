@@ -1,7 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { StyledIntro } from './Intro.style';
-
+import Resume from '../img/Sangcheol_Kim_Resume.pdf';
 
 function Intro() {
     return (
@@ -29,7 +29,7 @@ function Intro() {
                 </div>
 
                 <a href="#about"><button className="about-me-btn">About Me</button></a>
-                <button className="resume-btn">Resume</button>
+                <a href={Resume} target="_blank" rel="noreferrer"><button className="resume-btn">Resume</button></a>
             </div>
         </StyledIntro>
     )

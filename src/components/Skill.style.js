@@ -23,4 +23,10 @@ export const StyledSkill = styled.div`
             text-shadow: 4px 4px 5px black;
         }
     }
+
+    @media screen and (max-width: 370px) {
+        p{
+            font-size: 0.7rem;
+        }
+    }
 `

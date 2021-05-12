@@ -39,7 +39,7 @@ function Skills() {
             </StyledTitle>
 
             <SkillDiv data-aos="fade-up">
-                <h2>Languages/Frameworks/Libraries</h2>
+                <h2>Languages/ Frameworks/ Libraries</h2>
                 <SkillBox>
                     <Skill src={htmlIcon} alt="html5 icon" text="HTML"/>
                     <Skill src={cssIcon} alt="css3 icon" text="CSS"/>
@@ -68,7 +68,7 @@ function Skills() {
             </SkillDiv>
 
             <SkillDiv data-aos="fade-up">
-                <h2>Miscellaneous/Soft Skills</h2>
+                <h2>Miscellaneous/ Soft Skills</h2>
                 <SkillBox>
                     <Skill src={korean} alt="Korean icon" text="Korean"/>
                     <Skill src={teaching} alt="Teaching icon" text="Teaching"/>

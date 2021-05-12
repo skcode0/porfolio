@@ -12,6 +12,11 @@ export const StyledContact = styled.div`
             img{
                 margin: 0 10px;
             }
+
+            
+            :hover{
+                transform: scale(1.1);
+            }
         }
     }
 `

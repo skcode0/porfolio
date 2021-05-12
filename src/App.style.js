@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Krona One', sans-serif;
+        cursor: none;
     }
 
     :root{
@@ -42,6 +43,7 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background-color: var(--primary);
         color: white;
+        overflow-x: hidden;
     }
 
     button{
@@ -50,7 +52,10 @@ export const GlobalStyle = createGlobalStyle`
         border-radius: 50px;
         outline: 0;
         border: 0;
-        cursor: pointer;
+
+        :hover{
+            transform: scale(1.1);
+        }
     }
 
     ul{
@@ -66,6 +71,9 @@ export const GlobalStyle = createGlobalStyle`
         width: 90%;
         margin: 20px auto;
         padding-top: 5rem;
+    }
+
+    @media screen and (max-width: 600px) {
     }
 `
 

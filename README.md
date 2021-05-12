@@ -11,4 +11,14 @@
 
 [Vanilla Tilt](https://micku7zu.github.io/vanilla-tilt.js/)
 
-[React Spinners (preloader)](https://www.npmjs.com/package/react-spinners)
+[Custom Mouse](https://www.youtube.com/watch?v=m5oouFzHf7w)
+
+[Framer Motion](https://www.framer.com/api/motion/)
+
+[Intersection Observer](https://www.npmjs.com/package/react-intersection-observer)
+For using ref in conditional rendering 
+- atttach "ref" to DOM node.
+- "inView" returns true if DOM node in view; false if it's not.
+- "entry" give access to DOM node properties.
+
+

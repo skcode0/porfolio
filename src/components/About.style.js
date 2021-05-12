@@ -29,6 +29,30 @@ export const StyledAbout = styled.div`
             text-shadow: 2px 2px var(--complementary);
         }
     }
+
+    @media screen and (max-width: 768px) {
+        display: block;
+        
+        .about-me{
+            width: 100%;
+        }
+
+        .circular-text{
+            margin: 20px auto;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .circular-text{
+            img{
+                width: 200px;
+            }
+
+            p{
+                font-size: 70px;
+            }
+        }
+    }
 `
 
 export const StyledAboutTitle = styled.div`

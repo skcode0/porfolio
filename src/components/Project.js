@@ -8,11 +8,8 @@ function Project(props) {
 
     // options for vanilla tilt
     const options = {
-        glare: true,
-        "max-glare": 1,
         reverse: true,
-        max: 10,
-        scale: 1.05
+        scale: 1.05,
     }
 
     useEffect(() =>{
@@ -35,7 +32,9 @@ function Project(props) {
                 </div>
             </div>
             
-            <img ref={projectRef} src={img} alt={title} data-aos={reverse ? "fade-right" : "fade-left"} data-aos-delay="300"/>
+            <div className="img-wrapper" ref={projectRef}>
+                <img src={img} alt={title} data-aos={reverse ? "fade-right" : "fade-left"} data-aos-delay="300"/>
+            </div>
         </StyledProject>
 )
 }

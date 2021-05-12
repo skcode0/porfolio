@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledProjectWrapper, StyledProject } from './Projects.style';
+import { StyledProjectWrapper } from './Projects.style';
 import { StyledTitle } from './Skills.style';
 import PinterestClone from '../img/pinterest-clone.png';
 import weather from '../img/weather.png';

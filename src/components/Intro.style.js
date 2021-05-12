@@ -29,12 +29,20 @@ export const StyledIntro = styled.div`
         color: white;
     }
 
-    .about-me-btn:hover{
+    button:hover{
         background-color: white;
         color: var(--secondary);
     }
 
     .resume-btn{
         background-color: var(--complementary);
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: 320px){
+        font-size: 2.3rem;
     }
 `

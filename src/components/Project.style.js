@@ -4,7 +4,9 @@ export const StyledProject = styled.div`
     display: flex;
     flex-direction: ${props => props.reverse ? "row-reverse" : "row"};
     justify-content: space-around;
+    align-items: center;
     margin: 20px 0;
+    overflow: hidden;
 
     .project-description{
         margin: 50px;
@@ -42,8 +44,36 @@ export const StyledProject = styled.div`
         }
     }
 
-    img{
+    .img-wrapper{
         width: 40%;
         border-radius: 20px;
+
+        img{
+            width: 100%;
+            border-radius: inherit;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        .project-description{
+            margin: 25px;
+        }
+
+        .img-wrapper{
+            width: 70%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .project-description{
+            margin: 10px;
+        }
+
+        .img-wrapper{
+            width: 100%;
+        }
     }
 `

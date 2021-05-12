@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { StyledAbout, StyledAboutTitle } from './About.style';
 import circularText from '../img/circularText.svg';
 import VanillaTilt from 'vanilla-tilt';
+import { motion } from 'framer-motion';
 
 function About() {
     const pRef = useRef(null);
@@ -28,7 +29,18 @@ function About() {
             </div>
 
             <div className="circular-text" data-aos="fade-up">
-                <img src={circularText} alt="Circular Text"/>
+                <motion.img src={circularText} alt="Circular Text"
+                    animate={{ rotate: 360 }}
+                    transition={
+                        { 
+                            repeat: Infinity, 
+                            duration: 15, 
+                            type: "tween",
+                            repeatDelay: 0,
+                            ease: "linear"
+                        }
+                    }
+                />
                 <p ref={pRef}>SK</p>
             </div>
         </StyledAbout>
