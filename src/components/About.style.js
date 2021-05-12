@@ -42,7 +42,7 @@ export const StyledAbout = styled.div`
         }
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 411px) {
         .circular-text{
             img{
                 width: 200px;
