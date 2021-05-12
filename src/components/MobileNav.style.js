@@ -31,8 +31,6 @@ export const StyledUl = styled(motion.ul)`
     }
 
     @media screen and (max-width: 425px) {
-        .mobile-ul{
-            width: 70%;
-        }
+        width: 70%;
     }
 `
